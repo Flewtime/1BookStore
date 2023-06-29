@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2eebeed713ba41ea892e6be05f12d79d" Name="Diagram1">
+        <EntityTypeShape EntityType="Database1Model.Author" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Book" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Cart" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Category" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.CoverType" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Genre" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Language" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Order" Width="1.5" PointX="3" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.OrderDetail" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Payment" Width="1.5" PointX="0.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.PaymentMethod" Width="1.5" PointX="1.5" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Publisher" Width="1.5" PointX="0.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Review" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Shipment" Width="1.5" PointX="0.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.ShipmentType" Width="1.5" PointX="1.5" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.TransactionDetail" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.TransactionHeader" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.User" Width="1.5" PointX="0.75" PointY="34.625" IsExpanded="true" />
+        <AssociationConnector Association="Database1Model.FK_Book_ToAuthor" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Book_ToCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Book_ToCoverType" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Book_ToGenre" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Book_ToLanguage" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Book_ToPublisher" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Cart_ToBook" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_OrderDetail_ToBook" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Review_ToBook" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionDetail_ToBook" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Cart_ToUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Order_ToPayment" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Order_ToShipment" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Order_ToUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_OrderDetail_ToOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Payment_ToPaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionHeader_ToPayment" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Review_ToUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Shipment_ToShipmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionHeader_ToShipment" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionDetail_ToTransactionHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionHeader_ToUser" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
